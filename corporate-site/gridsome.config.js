@@ -4,7 +4,8 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const i18n = require('./src/plugins/i18n')
 module.exports = {
-  siteName: 'Gridsome',
-  plugins: []
+  siteName: 'Bricoflor Corporate Site',
+  plugins: [i18n]
 }
