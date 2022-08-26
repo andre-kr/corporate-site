@@ -5,7 +5,8 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 const i18n = require('./src/plugins/i18n')
+const remark = require('./src/plugins/remark')
 module.exports = {
   siteName: 'Bricoflor Corporate Site',
-  plugins: [i18n]
+  plugins: [i18n, remark]
 }

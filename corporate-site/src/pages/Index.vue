@@ -13,9 +13,24 @@
       <span>
         {{ $t('teststring') }}
       </span>
+<!--       <div>
+        {{ $Post.allPost.edges.node.content }}
+      </div> -->
     </body>
   </Layout>
 </template>
+
+<page-query>
+query Post {
+  allPost {
+    edges {
+      node {
+        content
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 export default {
